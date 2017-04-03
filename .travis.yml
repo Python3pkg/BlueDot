@@ -1,8 +1,9 @@
 language: python
 sudo: required
+virtualenv: 
+  system_site_packages: true
 python:
   - "2.7"
-  - "3.2"
   - "3.3"
   - "3.4"
   - "3.5"
