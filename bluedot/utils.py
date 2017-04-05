@@ -1,7 +1,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 import os
 #dirty hack for travis, as installing dbus on travis seems 'virtually' impossible and its not required for mock testing!
-if os.environ.get('DONTIMPORTDBUS') == None:
+if os.environ.get("TRAVIS") == "true":
     import dbus
 import time
 
