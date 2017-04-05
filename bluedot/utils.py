@@ -1,5 +1,5 @@
 from __future__ import absolute_import, print_function, unicode_literals
-import dbus
+#import dbus
 import time
 
 SERVICE_NAME = "org.bluez"
