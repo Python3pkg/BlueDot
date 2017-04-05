@@ -1,5 +1,8 @@
 from __future__ import absolute_import, print_function, unicode_literals
-#import dbus
+import os
+#dirty hack for travis, as installing dbus on travis seems 'virtually' impossible and its not required for mock testing!
+if os.environ.get('DONTIMPORTDBUS') == None:
+    import dbus
 import time
 
 SERVICE_NAME = "org.bluez"
